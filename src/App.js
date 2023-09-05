@@ -1,8 +1,5 @@
 import { Canvas } from "@react-three/fiber";
-
-import FirstWall from "./components/FirstWall";
-import SecondWall from "./components/SecondWall";
-import Floor from "./components/Floor";
+import Room from "./components/Room";
 
 const App = () => {
   return (
@@ -13,10 +10,7 @@ const App = () => {
         background: "black",
       }}
     >
-      <ambientLight intensity={0.5} />
-      <Floor />
-      {/* <FirstWall />
-      <SecondWall /> */}
+      <Room />
     </Canvas>
   );
 };
